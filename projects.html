@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="style5 project.css">
+    <nav>
+        <div class="logo"> <img src="logo.png" class="logo"></div>
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="projects.html" class="active">Projects</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="column-left">
+                <h1>OLAOYE ITUNUOLUWA</h1>
+
+
+            </div>
+            <div class="column-right">
+                <img src="./coding.jfif" height="400px" width="600px" alt="illustration
+                " class="hero-image" />
+            </div>
+
+            <h2>COUNTDOWN TO MY FIVE YEARS GOAL</h2>
+        <div class="countdown">
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("sept 6, 2029 15:37:25").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function () {
+
+                    // Get today's date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Output the result in an element with id="demo"
+                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s ";
+
+                    // If the count down is over, write some text 
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+            </script>
+            </div>
+            <pre><p class="goals">Five-Year Plan for Web Development
+          <h3> Year 1: Foundation Building</h3>
+        Learn the Basics:
+        HTML/CSS: Master the fundamentals of web development. Build static web pages to understand structure and styling.
+        JavaScript: Get comfortable with basic programming concepts and manipulating the DOM.
+        Tools & Workflows:
+    Version Control: Learn Git and GitHub for version control and collaboration.
+    Code Editors: Familiarize yourself with popular editors like Visual Studio Code.
+    Build Portfolio:
+    Create and deploy simple projects (e.g., personal website, small apps).
+    Focus on clean code and best practices.
+    Follow Tutorials & Courses:
+    Engage with online courses (e.g., freeCodeCamp, Codecademy, Coursera).
+    Participate in coding challenges (e.g., on platforms like LeetCode or HackerRank).
+   <h3> Year 2: Advanced Skills & Specialization</h3>
+Advanced JavaScript:
+ES6+ Features: Learn about modern JavaScript features and syntax.
+Asynchronous Programming: Understand Promises, async/await, and API integration.
+Frontend Frameworks:
+React.js: Start with a popular frontend framework/library. Build dynamic and interactive UIs.
+Other Frameworks (Optional): Explore Vue.js or Angular if interested.
+Backend Basics:
+Node.js & Express: Learn server-side JavaScript and create RESTful APIs.
+Databases: Start with SQL databases (e.g., PostgreSQL) and NoSQL databases (e.g., MongoDB).
+Portfolio Enhancement:
+Develop more complex projects, integrating both frontend and backend skills.
+Contribute to open-source projects or collaborate with others.
+<h3>Year 3: Professional Development</h3>
+Full-Stack Development:
+Build full-stack applications combining frontend and backend technologies.
+Learn about authentication, state management, and deployment strategies.
+DevOps Basics:
+CI/CD: Learn about Continuous Integration and Continuous Deployment practices.
+Cloud Services: Explore cloud platforms (e.g., AWS, Azure) for hosting and scalability.
+Soft Skills:
+Communication: Improve your ability to communicate technical concepts to non-technical stakeholders.
+Project Management: Familiarize yourself with Agile methodologies and project management tools.
+Job Search/Internship:
+Apply for internships or junior developer positions.
+Focus on building a strong resume and preparing for technical interviews.
+<h3>Year 4: Specialization & Leadership</h3>
+Specialization:
+Choose an area of specialization such as frontend development, backend development, or a specific technology stack (e.g., React, Node.js).
+Deepen your knowledge in this area through advanced courses, certifications, or projects.
+Leadership & Mentorship:
+Start mentoring junior developers or interns.
+Take on leadership roles in projects or teams.
+Networking:
+Attend conferences, meetups, or webinars.
+Join professional communities or forums related to your specialization.
+Advanced Projects:
+Work on larger-scale or more complex projects.
+Consider starting a side project or entrepreneurial venture if interested.
+<h3>Year 5: Mastery & Career Growth</h3>
+Expertise Development:
+Aim to become an expert in your chosen specialization.
+Contribute to industry publications or speak at conferences.
+Career Advancement:
+Explore opportunities for advancement within your organization or look for senior roles elsewhere.
+Consider roles such as Senior Developer, Tech Lead, or Engineering Manager.
+Continued Learning:
+Stay updated with the latest industry trends, tools, and technologies.
+Continuously improve your skills through advanced courses, research, and practice.
+Personal Projects & Legacy:
+Work on meaningful personal projects or initiatives.
+Aim to leave a positive impact on the community, such as through open-source contributions or educational resources.
+Tips for Success
+Set Clear Goals:
+Regularly review and adjust your goals to stay aligned with your progress and interests.
+Stay Curious: The tech field is constantly evolving, so keep learning and exploring new areas.
+Seek Feedback: Regularly seek feedback on your work and use it to improve and grow.</p></pre>
+           
+
+        </div>
+        </div>
+
+        <div>
+
+            ​
+            <p id="demo"></p>
+            ​
+
+        </div>
+
+        <div class="bulb">
+            <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+            <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+            <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+            <style>
+                p {
+                    text-align: center;
+                    font-size: 60px;
+                    margin-top: 0px;
+                }
+            </style>
+        </div>
+        <script src="script.js"></script>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Me</h3>
+                <p>I'm a web designer and developer dedicated to creating beautiful, functional websites.</p>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <div class="social-media">
+                    <a href="https://www.google.com/search?q=facebook&oq=fa&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPNIBCDU3MTFqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&safe=strict"><img src="face.jfif" alt="Facebook"></a>
+                    <a href="https://www.google.com/search?q=instagram&oq=in&gs_lcrp=EgZjaHJvbWUqDwgCEEUYOxiDARixAxiABDIGCAAQRRg5Mg0IARAuGNQCGLEDGIAEMg8IAhBFGDsYgwEYsQMYgAQyDQgDEAAYgwEYsQMYgAQyDQgEEAAYgwEYsQMYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg4MjM3ajBqOagCALACAA&sourceid=chrome&ie=UTF-8&safe=strict"><img src="ins.jfif" alt="Instagram"></a>
+                    <a href="https://www.google.com/search?q=x-twitter&oq=x-tw&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQLhiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTE0NjE0ajBqOagCALACAA&sourceid=chrome&ie=UTF-8&safe=strict"><img src="x.png" alt="X (Twitter)"></a>
+                    <a href="https://www.google.com/search?q=telephone&oq=telephone+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIMCAEQIxgnGIAEGIoFMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAuGIAE0gEJMjYxOTZqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8&safe=strict"><img src="tel.jfif" alt="Telegram"></a>
+                    <a href="https://www.google.com/search?q=whatsapp&oq=whatsapp&gs_lcrp=EgZjaHJvbWUyDggAEEUYJxg5GIAEGIoFMg0IARAAGIMBGLEDGIAEMgcIAhAAGIAEMg0IAxAAGIMBGLEDGIAEMg0IBBAAGIMBGLEDGIAEMgYIBRAFGEAyBggGEEUYPDIGCAcQRRg90gEINTAwOGowajmoAgiwAgE&sourceid=chrome&ie=UTF-8&safe=strict"><img src="what.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 iT_GUY. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

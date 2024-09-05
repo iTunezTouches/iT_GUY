@@ -1,0 +1,284 @@
+/* Reset and Basic Styles */
+/* Ensure footer stays at the bottom */
+body, html {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    flex: 1;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(40, 44, 52, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
+}
+.nav-items a:hover,
+.nav-items a.active {
+    color: #61dafb;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    background: url('hero-background.jpg') no-repeat center center/cover; /* Add a background image */
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.btn {
+    padding: 1rem 2rem;
+    background-color: #61dafb;
+    color: #282c34;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.column-left h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.column-left h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffc107; /* Accent color */
+}
+
+.hero .btn-primary {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1.5rem;
+}
+em{
+    color: skyblue;
+}
+
+.hero .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+/* Add a box around each section */
+.about-section {
+    border: 2px solid #007bff;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.about-section:hover {
+    background-color: #e7f1ff; /* Light blue background on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    transform: translateY(-5px); /* Lift the box slightly */
+}
+
+
+/* Customize headings within each section */
+.about-section h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .about-section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+}
+
+/* Paragraph styling inside the section */
+.about-section p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .hero .column-left, .hero .column-right {
+        width: 100%;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items a {
+        margin: 10px 0;
+    }
+
+    .about .container {
+        padding: 0 1rem;
+    }
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.footer-about, .footer-newsletter, .footer-social {
+    text-decoration: none;
+    flex-basis: 30%;
+}
+
+.footer-social .social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+footer p {
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .hero .column-left, .hero .column-right {
+        width: 100%;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items a {
+        margin: 10px 0;
+    }
+
+    .coding-class {
+        padding: 2rem 1rem;
+    }
+}
